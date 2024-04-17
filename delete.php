@@ -35,3 +35,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conexion->close();
 }
 ?>
+
+<footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 CRUD de Productos. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>

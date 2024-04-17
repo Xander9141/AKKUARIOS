@@ -3,10 +3,10 @@
 // Verificar si se recibió una solicitud POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Establecer la conexión a la base de datos
-    $host = 'localhost:3307'; // Cambia esto por tu host
-    $usuario = 'root'; // Cambia esto por tu usuario
-    $contrasena = 'root'; // Cambia esto por tu contraseña
-    $basedatos = 'productos_k'; // Cambia esto por el nombre de tu base de datos
+    $host = 'localhost:3307'; 
+    $usuario = 'root'; 
+    $contrasena = 'root';
+    $basedatos = 'productos_k'; 
     $conexion = new mysqli($host, $usuario, $contrasena, $basedatos);
 
     // Verificar la conexión
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Obtener los datos del formulario
-    $id = $_POST['id']; // Suponiendo que tienes un campo oculto en tu formulario con el ID del producto
+    $id = $_POST['id']; 
     $nombre = $_POST['nombre'];
     $descripcion = $_POST['descripcion'];
     $precio_neto = $_POST['precio_neto'];
@@ -42,6 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     // Si no se recibió una solicitud POST, redirigir al usuario a alguna página de error o a donde sea apropiado
     header("Location: error.php");
-    exit(); // Asegurar que el script se detenga después de redirigir
+    exit(); 
 }
 ?>

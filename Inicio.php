@@ -112,7 +112,7 @@
     if (isset($_GET['search'])) {
         $searchTerm = $_GET['search'];
 
-        // Modificar la consulta SQL para incluir el término de búsqueda
+        
         $sql = "SELECT * FROM productos WHERE nombre LIKE '%$searchTerm%' OR descripcion LIKE '%$searchTerm%'";
 
         // Ejecutar la consulta SQL y mostrar los resultados
